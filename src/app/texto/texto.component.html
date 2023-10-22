@@ -1,0 +1,18 @@
+<p>Consulta si tu palabra es par o impar</p>
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Ingrese la palabra: </label>
+    <input type="text" [(ngModel)]="p1" class="form-control" id="exampleFormControlInput1" placeholder="Palabra aqui">
+</div>
+
+<div class="card-body">
+    <button class="btn btn-success" (click)="calcular()">
+        Consultar
+    </button>
+</div>
+
+
+<div class="card-body">
+    <h2>La palabra es: {{resultado}}</h2>
+    <h2>La longitud de la palabra es: {{longitud}}</h2>
+
+</div>
